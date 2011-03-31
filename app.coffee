@@ -66,9 +66,6 @@ server = http.createServer (req, res) ->
       else
         handleFile filename, res
 
-server.listen 8000
+server.listen 80
 
 
-server2 = http.createServer (req, res) ->
-  res.end("successfully proxied")
-server2.listen 8001
