@@ -55,6 +55,10 @@ server = http.createServer (req, res) ->
     proxy.proxyRequest req, res, newPort, '127.0.0.1'
   else
     #http://net.tutsplus.com/tutorials/javascript-ajax/learning-serverside-javascript-with-node-js/
+
+    #proxy to nginx?
+    #proxy.proxyRequest req, res, 8000, '127.0.0.1'
+
     uri = url.parse(req.url).pathname
    
     if uri is "/" then uri = "/index.html"
