@@ -1,0 +1,43 @@
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking officeatlas.the.tl (be patient)
+
+
+Server Software:        nginx/0.7.67
+Server Hostname:        officeatlas.the.tl
+Server Port:            80
+
+Document Path:          /
+Document Length:        989 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   0.307 seconds
+Complete requests:      1000
+Failed requests:        0
+Write errors:           0
+Total transferred:      1200000 bytes
+HTML transferred:       989000 bytes
+Requests per second:    3258.07 [#/sec] (mean)
+Time per request:       306.930 [ms] (mean)
+Time per request:       0.307 [ms] (mean, across all concurrent requests)
+Transfer rate:          3818.05 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   20  15.3     12      48
+Processing:     7   22  14.2     18     242
+Waiting:        5   20  14.9     16     242
+Total:         18   42  22.3     28     273
+
+Percentage of the requests served within a certain time (ms)
+  50%     28
+  66%     62
+  75%     63
+  80%     65
+  90%     70
+  95%     72
+  98%     74
+  99%     74
+ 100%    273 (longest request)

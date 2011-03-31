@@ -40,6 +40,7 @@ handleFile = (filename, res) ->
     if err
       handle500 filename, res
     res.writeHead 200, "Content-Type" : mimeType
+    if not data then data = ""
     res.write data, "binary"
     res.end()
 
